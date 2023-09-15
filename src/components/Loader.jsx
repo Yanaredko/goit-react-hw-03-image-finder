@@ -1,9 +1,15 @@
 import React from 'react';
+import { Puff } from 'react-loader-spinner';
 
-const Loader = () => (
-  <div className="loader">
-    <p>Loading...</p>
+const CustomLoader = () => (
+  <div className="Loader">
+    <Puff
+      color="#00BFFF" 
+      height={100} 
+      width={100} 
+    />
   </div>
 );
 
-export default Loader;
+export default CustomLoader;
+
